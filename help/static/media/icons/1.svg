@@ -1,0 +1,15 @@
+<svg width="37" height="68" viewBox="0 0 37 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M10.096 14.72V53.984H0.112V68H36.976V53.984H26.8V0.799995H0.976V14.72H10.096Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="-2" y1="5.38082" x2="44.1293" y2="19.075" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2A3993">
+<animate attributeName="offset" values="0;0.2;0.5;0.2;0" dur="13s" repeatCount="indefinite" />
+
+</stop>
+<stop offset="0.5" stop-color="#727EC9">
+<animate attributeName="offset" values="0.5;0.7;0.8;1;0.7;0.5" dur="10.5s" repeatCount="indefinite" />
+</stop>
+</linearGradient>
+</defs>
+</svg>

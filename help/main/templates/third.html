@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>first</title>
+
+    <link href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css" rel="stylesheet"/>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/static/css/normalize.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/animate.css">
+</head>
+<body class="parallax">
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <a href="/" class="logo__link">
+                    <img src="/static/media/logo.svg" alt="HELP" class="logo__image">
+                </a>
+            </div>
+            <div class="header__burger-nav">
+                <!-- <a href="#" class="header__link"><p>Войти</p></a>-->
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__burger-menu">
+                    <ul class="header__burger-list">
+                        <li>
+                            <!--<a href="#" class="header__burger-link"><p>Войти</p></a>-->
+                        </li>
+                        <li>
+                            <a href="/courses" class="header__burger-link"><p>Обучение</p></a>
+                        </li>
+                        <li>
+                            <a href="/business" class="header__burger-link"><p>Для бизнеса</p></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/HelpAgency" class="header__burger-link"><p>Блог</p></a>
+                        </li>
+
+                    </ul>
+                    <div class="header__burger-contacts">
+                        <p>+7 (XXX)-XXX-XX-XX</p>
+                        <p>help@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <!-- <a href="#" class="header__link">Войти</a>-->
+                    </li>
+                    <li>
+                        <a href="/courses" class="header__link">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="/business" class="header__link">Для бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/HelpAgency" class="header__link">Блог</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="intro-fourth">
+    <div class="container">
+        <div class="intro-fourth__inner">
+            <h1 class="intro-fourth__caption">{{course.name}}</h1>
+            <p class="intro-fourth__text">{{course.description}}</p>
+            <form action="#" class="intro-fourth__form">
+                <button class="intro-fourth__button button-white">Хочу научиться</button>
+            </form>
+        </div>
+    </div>
+    <div class="parallax-cont-1">
+        <img alt="" height="585" src="/static/media/whales/1.png" width="488">
+    </div>
+    <div class="wave">
+        <div class="wave__first"></div>
+        <div class="wave__second"></div>
+    </div>
+</section>
+<section class="forwho">
+    <div class="container">
+        <div class="forwho__inner">
+            <div class="forwho__caption-wrapper">
+                <h1 class="forwho__caption">ДЛЯ КОГО СОЗДАН НАШ КУРС?</h1>
+            </div>
+            <div class="forwho__items">
+                <div class="forwho__item">
+                    <div class="forwho__item-wrapper">
+                        <div class="forwho__item-caption-wrapper">
+                            <h2 class="forwho__item-caption">в поисках призвания</h2>
+                        </div>
+                        <div class="forwho__item-line"></div>
+                        <p class="forwho__item-text">Заинтересуем, вдохновим, научим</p>
+                    </div>
+                </div>
+                <div class="forwho__item">
+                    <div class="forwho__item-wrapper">
+                        <div class="forwho__item-caption-wrapper">
+                            <h2 class="forwho__item-caption">ФРИЛАНСЕРЫ</h2>
+                        </div>
+                        <div class="forwho__item-line"></div>
+                        <p class="forwho__item-text">Избавим от одноразовых заказов на 500 рублей, введем в высшую
+                            лигу</p>
+                    </div>
+                </div>
+                <div class="forwho__item">
+                    <div class="forwho__item-wrapper">
+                        <div class="forwho__item-caption-wrapper">
+                            <h2 class="forwho__item-caption">НА ПУТИ К СОВЕРШЕНСТВУ</h2>
+                        </div>
+                        <div class="forwho__item-line"></div>
+                        <p class="forwho__item-text">Прокачем навыки на 100%, заполним пробелы, научим тому, что не
+                            умел</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="steps">
+    <div class="container">
+        <div class="steps__inner">
+            <div class="steps__text-wrapper">
+                <h1 class="steps__caption">КАК ПРОХОДИТ КУРС?</h1>
+                <p class="steps__text">Мы ценим твое время. Именно поэтому никакой воды и максимально удобная структура
+                    курса. </p>
+            </div>
+            <div class="steps__mobile-wrapper">
+                <div class="steps__step-first-wrapper">
+                    <div class="steps__step wow fadeInLeft">
+                        <img src="/static/media/icons/1.svg" alt="1" class="steps__step-number">
+                        <p class="steps__step-text" style="padding-bottom: 90px">Смотришь лекции в личном кабинете </p>
+                    </div>
+                    <div class="steps__step-bigarrow-wrapper wow fadeInRight" data-wow-delay="5s">
+                        <img src="/static/media/arrows/bigarrow.svg" alt="big arrow"
+                             class="steps__step-bigarrow-mobile">
+                        <p class="steps__step-bigarrow-text-mobile">И так все модули курса</p>
+                    </div>
+                </div>
+                <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow wow fadeInLeft"
+                     data-wow-delay="1s">
+                <div class="steps__step-wrapper">
+                    <div class="steps__step wow fadeInLeft" data-wow-delay="2s">
+                        <img src="/static/media/icons/2.svg" alt="2" class="steps__step-number">
+                        <p class="steps__step-text">Выполняешь практическое задание</p>
+                    </div>
+                    <div class="wow fadeInDown" data-wow-delay="3s">
+                        <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow">
+                    </div>
+                    <div class="steps__step wow fadeInDown" data-wow-delay="4s">
+                        <img src="/static/media/icons/3.svg" alt="3" class="steps__step-number">
+                        <p class="steps__step-text">Получаешь видео-разбор</p>
+                    </div>
+                    <div class="wow fadeInDown" data-wow-delay="6s">
+                        <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow">
+                    </div>
+                    <div class="steps__step wow fadeInDown" data-wow-delay="7s">
+                        <img src="/static/media/icons/4.svg" alt="4" class="steps__step-number">
+                        <p class="steps__step-text">Сдаёшь экзамен</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="steps__media-wrapper">
+                <div class="step__first-wrapper">
+                    <div class="steps__step wow fadeInLeft">
+                        <img src="/static/media/icons/1.svg" alt="1" class="steps__step-number">
+                        <p class="steps__step-text" style="padding-bottom: 17px;">Смотришь лекции в личном кабинете </p>
+                    </div>
+                    <div class="steps__step-bigarrow-wrapper wow fadeInRight" data-wow-delay="5s">
+                        <img src="/static/media/arrows/bigarrow.svg" alt="big arrow"
+                             class="steps__step-bigarrow-mobile">
+                        <p class="steps__step-bigarrow-text-mobile">И так все модули курса</p>
+                    </div>
+                </div>
+                <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow wow fadeInLeft"
+                     data-wow-delay="1s">
+
+                <div class="steps__step wow fadeInLeft" data-wow-delay="2s">
+                    <img src="/static/media/icons/2.svg" alt="2" class="steps__step-number">
+                    <p class="steps__step-text">Выполняешь практическое задание</p>
+                </div>
+                <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow wow fadeInLeft"
+                     data-wow-delay="3s">
+                <div class="steps__step-wrapper">
+                    <div class="steps__step wow fadeInLeft" data-wow-delay="4s">
+                        <img src="/static/media/icons/3.svg" alt="3" class="steps__step-number">
+                        <p class="steps__step-text">Получаешь видео-разбор</p>
+                    </div>
+                    <div class="wow fadeInDown" data-wow-delay="6s">
+                        <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow">
+                    </div>
+                    <div class="steps__step wow fadeInDown" data-wow-delay="7s">
+                        <img src="/static/media/icons/4.svg" alt="4" class="steps__step-number">
+                        <p class="steps__step-text">Сдаёшь экзамен</p>
+                    </div>
+                </div>
+            </div>
+            <div class="steps__large-wrapper">
+                <div class="step__first-wrapper">
+                    <div class="steps__step wow fadeInLeft">
+                        <img src="/static/media/icons/1.svg" alt="1" class="steps__step-number ">
+                        <p class="steps__step-text" style="padding-bottom: 30px;">Смотришь лекции в личном кабинете </p>
+                    </div>
+                    <div class="steps__step-bigarrow-wrapper wow fadeInRight" data-wow-delay="5s">
+                        <img src="/static/media/arrows/bigarrow.svg" alt="big arrow"
+                             class="steps__step-bigarrow-mobile">
+                        <p class="steps__step-bigarrow-text-mobile">И так все модули курса</p>
+                    </div>
+                </div>
+                <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow wow fadeInLeft"
+                     data-wow-delay="1s">
+
+                <div class="steps__step wow fadeInLeft" data-wow-delay="2s">
+                    <img src="/static/media/icons/2.svg" alt="2" class="steps__step-number">
+                    <p class="steps__step-text">Выполняешь практическое задание</p>
+                </div>
+                <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow wow fadeInLeft"
+                     data-wow-delay="3s">
+                <div class="steps__step wow fadeInLeft" data-wow-delay="4s">
+                    <img src="/static/media/icons/3.svg" alt="3" class="steps__step-number">
+                    <p class="steps__step-text">Получаешь видео-разбор</p>
+                </div>
+
+                <img src="/static/media/arrows/arrow.svg" alt="arrow" class="steps__step-arrow wow fadeInLeft"
+                     data-wow-delay="6s">
+                <div class="steps__step wow fadeInLeft" data-wow-delay="7s">
+                    <img src="/static/media/icons/4.svg" alt="4" class="steps__step-number">
+                    <p class="steps__step-text">Сдаёшь экзамен</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stepan">
+    <div class="container">
+        <div class="stepan__inner">
+            <div class="stepan__caption-wrapper">
+                <h1 class="stepan__caption">ПРИВЕТ! </h1>
+                <div class="stepan__caption-name">
+                    <h1> я – </h1>
+                    <h1 style=" color:#B660CB">Степан</h1>
+                    <h1>!</h1>
+                </div>
+            </div>
+            <p class="stepan__text">Я очень люблю учиться и буду сопровождать тебя на протяжении всего обучения!</p>
+            <div class="stepan__comix-wrapper">
+                <img src="/static/media/comix.svg" alt="comix" class="stepan__comix">
+                <p class="stepan__comix-text">Ты сможешь найти меня в личном кабинете и обратится за помощью!</p>
+            </div>
+            <div class="stepan__image-wrapper">
+                <img src="/static/media/whales/4.png" alt="" class="stepan__image" style="" height="808" width="674">
+            </div>
+            <button class="button-blue">Познакомимся</button>
+        </div>
+    </div>
+</section>
+<section class="speaker">
+    <div class="container">
+        <h1 class="speaker__caption">СПИКЕР КУРСА</h1>
+        <div class="speaker__inner">
+            <img src="{{course.speaker_photo.url}}" alt="speaker" class="speaker__photo">
+            <div class="speaker__text-wrapper">
+                <h2 class="speaker__name">{{course.speaker_name}}</h2>
+                <ul class="speaker__list">
+                    {% for item in course.get_skills %}
+                    <li class="speaker__point"><p>{{item.skill}}</p></li>
+                    {% endfor %}
+                </ul>
+                <p class="speaker__text">{{course.speaker_description}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="programm">
+    <div class="container">
+        <h1 class="programm__caption">ПРОГРАММА КУРСА</h1>
+        {% for module in course.get_modules %}
+        <div class="programm__module">
+            <h2 class="programm__module-caption">МОДУЛЬ {{module.number}} - {{module.caption}}</h2>
+            <ul class="programm__module-list">
+                {% for lesson in module.get_lessons %}
+                <li><p>{{lesson.name}}</p></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<section class="faq">
+    <div class="container">
+        <div class="faq__inner">
+            <h1 class="faq__caption">
+                FAQ
+            </h1>
+            {%for question in course.get_questions %}
+            <a href="#popup{{question.id}}"><h3 class="faq__question">{{question.question}}</h3></a>
+            <div id="popup{{question.id}}" class="popup">
+                <div id="popup-close"></div>
+                <div class="popup__body">
+                    <div class="popup__content">
+
+                        <p class="popup__text">{{question.answer}}</p>
+                        <a href="#popup-close">
+                            <button class="button-blue popup__close">Понятно</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="price" id="price">
+    <div class="container">
+        <h1 class="price__caption">ТРАИФЫ ОБУЧЕНИЯ</h1>
+        <div class="price__inner">
+            <div class="price__card-light">
+                <div class="price__card-wrapper">
+                    <div class="price__card-price">49 990 ₽</div>
+                    <div class="price__card-description">Группы 3-5 человек</div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Подробный мануал о технологии blokchain, о криптовалютах и
+                            способах получения дохода с них.
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Подробный гайд по финансовой безопасности в интернете.</div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Текстовый материал обучения.</div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Приватный чат учеников с индивидуальными практическими
+                            заданиями.
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Доступ в чемпионат “HELP Traders” с денежным
+                            вознаграждением.
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Поддержка от куратора по всем вопросам.</div>
+                    </div>
+                    <a href="#" class="price__card-link">Рассрочка</a>
+                    <button class="button-card-alpha">Хочу научиться</button>
+                </div>
+            </div>
+            <div class="price__card-blue-light">
+                <div class="price__card-wrapper">
+                    <div class="price__card-price">99 990 ₽</div>
+                    <div class="price__card-description">Индивидуально с куратором</div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Пакет “Basic”
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Курс по меж-биржевому криптовалютному арбитражу</div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Помощь в создании, настройке и оформлении аккаунтов.</div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Создание грамотных и продающих ордеров (объявлений)
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Полное сопровождение по созданию и контролю платежных систем
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Внедрение личного учёта.
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Гарантия доведения до окупаемости обучения.</div>
+                    </div>
+                    <a href="#" class="price__card-link">Рассрочка</a>
+                    <button class="button-card-alpha">Хочу научиться</button>
+                </div>
+            </div>
+            <div class="price__card-blue">
+                <div class="price__card-wrapper">
+                    <div class="price__card-price">149 990 ₽</div>
+                    <div class="price__card-description">Индивидуально со спикером</div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Пакет “Ultra”
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Установка и проработка всех технологических инструментов для
+                            P2P торговли.
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Семинар действующих топ-трейдеров с оборотом > 100 млн₽/мес с
+                            проживанием в загородном клубе
+                        </div>
+                        <div class="price__card-item-line"></div>
+                    </div>
+                    <div class="price__card-item">
+                        <div class="price__card-item-text">Личное сопровождение Артура в течении 2 месяцев</div>
+                    </div>
+                    <a href="#" class="price__card-link">Рассрочка</a>
+                    <a href="#popuppay"><button class="button-card-alpha">Хочу научиться</button></a>
+
+                    <div id="popuppay" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+
+                        <style>.tinkoffPayRow{display:block;margin:1%;width:160px;}</style>
+                    <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+                    <form name="TinkoffPayForm" onsubmit="pay(this); return false;">
+                        <input class="input tinkoffPayRow " type="hidden" name="terminalkey" value="TinkoffBankTest">
+                        <input class="tinkoffPayRow input" type="hidden" name="frame" value="false">
+                        <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+                        <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" name="amount" required>
+                        <input class="tinkoffPayRow" type="text" placeholder="Номер заказа" name="order">
+                        <input class="tinkoffPayRow" type="text" placeholder="Описание заказа" name="description">
+                        <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name">
+                        <input class="tinkoffPayRow" type="text" placeholder="E-mail" name="email">
+                        <input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone">
+                        <input class="tinkoffPayRow" type="submit" value="Оплатить">
+                    </form>
+                        <a href="#popup-close">
+                            <button class="button-blue popup__close">Закрыть</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="container">
+        <div class="feedback__inner">
+            <div class="feedback__text-wrapper">
+                <h1 class="feedback__caption">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+                <div class="feedback__mail-wrapper">
+                    <p class="feedback__text">Напиши нам или оставь контакты, мы свяжемся с стобой:</p>
+                    <a href="#" class="feedback__mail-link">хелп@hmail.com</a>
+                </div>
+            </div>
+
+            <div class="feedback__form-wrapper">
+                <form action="#" class="feedback__form" method="post">
+                    {% csrf_token %}
+                    <div class="feedback__input-wrapper">
+                        {{form.name}}
+                        {{form.mail}}
+                        {{form.phone}}
+                        <button class="button-blue feedback__button-desktop">Отправить</button>
+                    </div>
+                    <p class="feedback__hidden-text">Нажимая кнопку, вы принимаете условия <a href="#">Политики
+                        конфиденциальности</a>
+                        и даёте согласие на
+                        <a href="#">обработку персональных данных</a></p>
+                    <div class="feedback__button-wrapper">
+                        <button class="button-blue feedback__button-mobile">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__politics">
+                <div class="logo">
+                    <a href="/" class="logo__link">
+                        <img src="static/media/logo.svg" alt="" class="logo__image">
+                    </a>
+                </div>
+                <a href="#" class="footer__link link">Политика конфеденциальности</a>
+                <a href="#" class="footer__link link">Мобильная версия сайта</a>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__icons">
+                    <div class="footer__icons-contact">
+                        <div>
+                            <a href="https://t.me/HelpAgency" class="footer_icon-link"><img class="footer__icon"
+                                                                                            src="static/media/icons/tg.svg"
+                                                                                            alt="tg"
+                                                                                            class="telegram"></a>
+                            </a>
+                            <a href="https://www.instagram.com/agency.help/" class="footer_icon-link"><img
+                                    class="footer__icon" src="static/media/icons/inst.svg"
+                                    alt="inst" class="inst"></a>
+                        </div>
+                        <div>
+                            <a class="footer__mail-link" href="mail:help@gmail.com">help@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__icons-share">
+                        <a href="#" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/fb.svg"
+                                                                  alt="tg"
+                                                                  class="fb"></a>
+                    </div>
+                    <a href="#" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/vk.svg"
+                                                              alt="inst"
+                                                              class="vk" height="35" width="45"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer__design-by">design by a.chibichik</p>
+</footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js"
+        integrity="sha512-8Tq/SKkeNKeVYZCkk0esWn+r00nNMcfZhsdszg9GN7BZSGgV1v9AJ8qHDI/PqFqRYZVOe8Afbph7OFb7SWwaPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+<script src="/static/js/wow.min.js"></script>
+<script>new WOW({mobile: true, live: true}).init()</script>
+<script src="/static/js/burger.js"></script>
+<script src="/static/js/parallax.js"></script>
+</html>

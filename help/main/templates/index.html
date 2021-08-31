@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>first</title>
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css"/>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="parallax">
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <a href="/" class="logo__link">
+                    <img src="static/media/logo.svg" alt="" class="logo__image">
+                </a>
+            </div>
+            <div class="header__burger-nav">
+               <!-- <a href="#" class="header__link"><p>Войти</p></a>-->
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__burger-menu">
+                    <ul class="header__burger-list">
+                        <li>
+                            <!--<a href="#" class="header__burger-link"><p>Войти</p></a>-->
+                        </li>
+                        <li>
+                            <a href="/courses" class="header__burger-link"><p>Обучение</p></a>
+                        </li>
+                        <li>
+                            <a href="/business" class="header__burger-link"><p>Для бизнеса</p></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/HelpAgency" class="header__burger-link"><p>Блог</p></a>
+                        </li>
+
+                    </ul>
+                    <div class="header__burger-contacts">
+                        <p>+7 (XXX)-XXX-XX-XX</p>
+                        <p>help@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                       <!-- <a href="#" class="header__link">Войти</a>-->
+                    </li>
+                    <li>
+                        <a href="/courses" class="header__link">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="/business" class="header__link">Для бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/HelpAgency" class="header__link">Блог</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="intro">
+    <div class="container">
+        <div class="intro-inner">
+            <div class="intro__text-wrapper">
+                <h1 class="intro__caption text-center">
+                    Смотрим на мир доходным взглядом
+                </h1>
+                <p class="intro__text text-center">
+                    Есть любимое дело – монетизируем
+                    <br>
+                    Есть любимый бизнес – доведем до совершенства
+                </p>
+                <div class="intro__buttons">
+                    <form action="/courses">
+                    <button class="button-white">Хочу научиться</button>
+                    </form>
+                    <form action="/business">
+                    <button class="button-alpha">Есть свой бизнес</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-cont-1">
+        <img src="static/media/whales/1.png" height="585" width="488" alt="">
+    </div>
+    <div class="parallax-cont">
+        <img src="static/media/whales/2.png" height="585" width="488" alt="">
+    </div>
+    <div class="wave">
+        <div class="wave__first"></div>
+        <div class="wave__second"></div>
+    </div>
+</section>
+<section class="video">
+    <div class="container">
+        <div class="video__inner">
+            <div class="video__text-wrapper">
+                <h1 class="video__caption">БИЗНЕС МНОГОГРАНЕН</h1>
+                <p class="video__text">Поэтому мы создали команду специалистов из самых разных сфер.</p>
+            </div>
+            <div class="video__video-content">
+                <video controls class="vid1">
+                    <!-- Video files -->
+                    <source src="static/" type="video/mp4"/>
+
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div class="container">
+        <div class="slider__inner">
+            <div class="slider__text-wrapper">
+                <h1 class="slider__caption text-center">
+                    НАША КОМАНДА ПО СПАСЕНИЮ МИРА
+                </h1>
+                <p class="slider__text text-center">
+                    Это те люди, которые помогут тебе стать лучше.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery" align="center">
+            {% for speaker in speakers %}
+            <div class="gallery__item">
+                <div class="gallery__photo" align="center"><img src="{{speaker.image.url}}" alt=""></div>
+                <div class="gallery__text text-center">
+                    <h6 class="gallery__name">{{ speaker.name }}</h6>
+                    <p class="gallery__post">{{ speaker.post }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<section class="abilities">
+    <div class="container">
+        <div class="abilities__inner">
+            <h1 class="abilities__caption text-center">
+                ЧТО МЫ УМЕЕМ
+            </h1>
+            <div class="abilities__cards">
+                <div class="abilities__card">
+                    <div class="abilities__card-wrapper">
+                        <img class="abilities__card-image" src="static/media/icons/hat.svg" alt="hat">
+                        <h1 class="abilities__card-caption">ОБУЧАЕМ</h1>
+                        <p class="abilities__card-text">Поможем создать бизнес с нуля и заставим его приносить
+                            прибыль</p>
+                        <div class="abilities__card-button">
+                            <form action="#">
+                            <button class="button-blue">Научиться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="abilities__card">
+                    <div class="abilities__card-wrapper">
+                        <img class="abilities__card-image" src="static/media/icons/box.svg" alt="box">
+                        <h1 class="abilities__card-caption">РАЗВИВАЕМ</h1>
+                        <p class="abilities__card-text">Бизнес всегда находится в динамике. Сделаем динамику твоего дела
+                            положительной, а результаты – максимальными</p>
+                        <form action="/courses">
+                        <button class="abilities__card-button button-blue">Научиться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__politics">
+                <div class="logo">
+                    <a href="/" class="logo__link">
+                        <img src="static/media/logo.svg" alt="" class="logo__image">
+                    </a>
+                </div>
+                <a href="#" class="footer__link link">Политика конфеденциальности</a>
+                <a href="#" class="footer__link link">Мобильная версия сайта</a>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__icons">
+                    <div class="footer__icons-contact">
+                        <div>
+                            <a href="https://t.me/HelpAgency" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/tg.svg"
+                                                                      alt="tg" class="telegram"></a>
+                            </a>
+                            <a href="https://www.instagram.com/agency.help/" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/inst.svg"
+                                                                      alt="inst" class="inst"></a>
+                        </div>
+                        <div>
+                            <a class="footer__mail-link" href="mail:help@gmail.com">help@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__icons-share">
+                        <a href="#" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/fb.svg" alt="tg"
+                                                                  class="fb"></a>
+                    </div>
+                    <a href="#" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/vk.svg" alt="inst"
+                                                              class="vk" height="35" width="45"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer__design-by">design by a.chibichik</p>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js"
+        integrity="sha512-8Tq/SKkeNKeVYZCkk0esWn+r00nNMcfZhsdszg9GN7BZSGgV1v9AJ8qHDI/PqFqRYZVOe8Afbph7OFb7SWwaPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+
+<script src="static/js/burger.js"></script>
+<script src="static/js/plyr-controls.js"></script>
+<script src="static/js/slick.js"></script>
+<script type="text/javascript">
+{
+  if (screen.width > 1170) document.write ('<script src="static/js/parallax.js"></sc' + 'ript>');
+}
+</script>
+</html>

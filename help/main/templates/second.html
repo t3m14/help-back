@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>first</title>
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css"/>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <a href="/" class="logo__link">
+                    <img src="static/media/logo.svg" alt="" class="logo__image">
+                </a>
+            </div>
+            <div class="header__burger-nav">
+               <!-- <a href="#" class="header__link"><p>Войти</p></a>-->
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__burger-menu">
+                    <ul class="header__burger-list">
+                        <li>
+                            <!--<a href="#" class="header__burger-link"><p>Войти</p></a>-->
+                        </li>
+                        <li>
+                            <a href="/courses" class="header__burger-link"><p>Обучение</p></a>
+                        </li>
+                        <li>
+                            <a href="/business" class="header__burger-link"><p>Для бизнеса</p></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/HelpAgency" class="header__burger-link"><p>Блог</p></a>
+                        </li>
+
+                    </ul>
+                    <div class="header__burger-contacts">
+                        <p>+7 (XXX)-XXX-XX-XX</p>
+                        <p>help@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                       <!-- <a href="#" class="header__link">Войти</a>-->
+                    </li>
+                    <li>
+                        <a href="/courses" class="header__link">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="/business" class="header__link">Для бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/HelpAgency" class="header__link">Блог</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="intro-second">
+    <div class="container">
+        <div class="intro-second__inner">
+            <div class="intro-second__major-caption-wrapper">
+                <h1 class="intro-second__caption text-center">ВЫБЕРИ СТОРОНУ СИЛЫ</h1>
+            </div>
+            <div class="intro-second__courses">
+                <div class="intro-second__course-gallery">
+                    {% for course in courses %}
+                    <div class="intro-second__course-gallery-item">
+                        <div class="intro-second__caption-wrapper">
+                            <h2 class="intro-second__course-gallery-caption">{{course.name}}</h2>
+                        </div>
+                        <p class="intro-second__course-gallery-text">{{course.slider_description}}</p>
+
+                        <form action="{% url 'course' slug=course.slug%} ">
+                            <button class="button-white intro-second__course-gallery-button">Узнать побробнее</button>
+                        </form>
+                        <div class="course-gallery-link">
+                            <a href="{% url 'course' slug=course.slug%}#price" class="course-gallery-link link">Сразу к делу</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave">
+        <div class="wave__first"></div>
+        <div class="wave__second"></div>
+    </div>
+</section>
+<section class="slider">
+    <div class="container">
+        <div class="slider__inner">
+            <div class="slider__text-wrapper">
+                <h1 class="slider__caption text-center">
+                    НАШИ СПИКЕРЫ
+                </h1>
+                <p class="slider__text text-center">
+                    Научат всему от «А» до «Я»
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery" align="center">
+            {% for speaker in speakers %}
+            <div class="gallery__item">
+                <div class="gallery__photo" align="center"><img src="{{speaker.image.url}}" alt=""></div>
+                <div class="gallery__text text-center">
+                    <h6 class="gallery__name">{{ speaker.name }}</h6>
+                    <p class="gallery__post">{{ speaker.post }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<section class="slider-under">
+    <div class="container">
+        <div class="slider-under__inner">
+            <div class="slider-under__text-wrapper">
+                <p class="slider-under__text">Если вы грамотный специалист, который достиг высот в своём деле, мы всегда
+                    рады сотрудничеству. </p>
+            </div>
+
+            <div class="slider-under__button-wrapper">
+                <form class="button-blue-form" action="/courses">
+                    <button class="button-blue">Хочу учить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="whywe">
+    <div class="container">
+        <div class="whywe__inner">
+            <div class="whywe__caption-wrapper">
+                <h1 class="whywe__caption">ПОЧЕМУ ИМЕННО МЫ</h1>
+            </div>
+            <div class="whywe__items">
+                <div class="whywe__items-row">
+                    <div class="whywe__item">
+                        <img src="static/media/icons/specialists.svg" alt="specialists" class="whywe__item-image">
+                        <h2 class="whywe__item-caption">СПЕЦИАЛИСТЫ</h2>
+                        <p class="whywe__item-text">Лучших не найти</p>
+                    </div>
+                    <div class="whywe__item">
+                        <img src="static/media/icons/expirence.svg" alt="brain" class="whywe__item-image">
+                        <h2 class="whywe__item-caption">ОПЫТ</h2>
+                        <p class="whywe__item-text">Знаем, что делаем</p>
+                    </div>
+                </div>
+                <div class="whywe__items-row">
+                    <div class="whywe__item">
+                        <img src="static/media/icons/practice.svg" alt="practice" class="whywe__item-image">
+                        <h2 class="whywe__item-caption">ПРАКТИКА</h2>
+                        <p class="whywe__item-text">Учим на деле, а не на слове</p>
+                    </div>
+                    <div class="whywe__item">
+                        <img src="static/media/icons/approach.svg" alt="approach" class="whywe__item-image">
+                        <h2 class="whywe__item-caption">ПОДХОД</h2>
+                        <p class="whywe__item-text">Без формальностей и заумных лекций</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="video">
+    <div class="container">
+        <div class="video__inner">
+            <div class="video__text-wrapper">
+                <h1 class="video__caption video-second-caption">ДЕЛАЕМ ПО-СВОЕМУ</h1>
+                <p class="video__text video-second-text">Создаем комфортную среду обучения, в которой информация
+                    усваивается сама собой. Учим на практике – каждое слово находит свое применение. </p>
+            </div>
+            <div class="video__video-content">
+                <video controls class="vid1">
+                    <!-- Video files -->
+                    <source src="static/" type="video/mp4"/>
+
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mail">
+    <div class="container">
+        <div class="mail__inner">
+            <div class="mail__text-wrapper">
+                <p class="mail__text">ТЫ УЖЕ ЗДЕСЬ?</p>
+                <h2 class="mail__caption">ДЕРЖИ ПОДАРОЧЕК</h2>
+            </div>
+            <div class="mail__form-wrapper">
+                <form action="#" class="mail__form" method="post">
+                    {% csrf_token %}
+                    {{form.mail}}
+                    <button class="mail__button"><img src="static/media/arrows/btnarw.svg" alt="" class="button-arrow">
+                    </button>
+                </form>
+            </div>
+            <!-- mail__input input -->
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__politics">
+                <div class="logo">
+                    <a href="/" class="logo__link">
+                        <img src="static/media/logo.svg" alt="" class="logo__image">
+                    </a>
+                </div>
+                <a href="#" class="footer__link link">Политика конфеденциальности</a>
+                <a href="#" class="footer__link link">Мобильная версия сайта</a>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__icons">
+                    <div class="footer__icons-contact">
+                        <div>
+                            <a href="https://t.me/HelpAgency" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/tg.svg"
+                                                                      alt="tg" class="telegram"></a>
+                            </a>
+                            <a href="https://www.instagram.com/agency.help/" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/inst.svg"
+                                                                      alt="inst" class="inst"></a>
+                        </div>
+                        <div>
+                            <a class="footer__mail-link" href="mail:help@gmail.com">help@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__icons-share">
+                        <a href="#" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/fb.svg" alt="tg"
+                                                                  class="fb"></a>
+                    </div>
+                    <a href="#" class="footer_icon-link"><img class="footer__icon" src="static/media/icons/vk.svg" alt="inst"
+                                                              class="vk" height="35" width="45"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer__design-by">design by a.chibichik</p>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js"
+        integrity="sha512-8Tq/SKkeNKeVYZCkk0esWn+r00nNMcfZhsdszg9GN7BZSGgV1v9AJ8qHDI/PqFqRYZVOe8Afbph7OFb7SWwaPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+
+<script src="static/js/burger.js"></script>
+<script src="static/js/plyr-controls.js"></script>
+<script src="static/js/slick.js"></script>
+</html>

@@ -1,0 +1,44 @@
+<svg width="92" height="101" viewBox="0 0 92 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M73.5846 31.8333C81.2706 31.8333 87.5013 25.6026 87.5013 17.9167C87.5013 10.2307 81.2706 4 73.5846 4C65.8987 4 59.668 10.2307 59.668 17.9167C59.668 25.6026 65.8987 31.8333 73.5846 31.8333Z" stroke="url(#paint0_linear)" stroke-width="7"/>
+<path d="M73.5846 96.7786C81.2706 96.7786 87.5013 90.5479 87.5013 82.862C87.5013 75.176 81.2706 68.9453 73.5846 68.9453C65.8987 68.9453 59.668 75.176 59.668 82.862C59.668 90.5479 65.8987 96.7786 73.5846 96.7786Z" stroke="url(#paint1_linear)" stroke-width="7"/>
+<path d="M17.9167 64.306C25.6026 64.306 31.8333 58.0753 31.8333 50.3893C31.8333 42.7034 25.6026 36.4727 17.9167 36.4727C10.2307 36.4727 4 42.7034 4 50.3893C4 58.0753 10.2307 64.306 17.9167 64.306Z" stroke="url(#paint2_linear)" stroke-width="7"/>
+<path d="M61.5586 75.8461L29.9492 57.4065M61.5586 24.9297L29.9492 43.3693L61.5586 24.9297Z" stroke="url(#paint3_linear)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear" x1="59.668" y1="6.41686" x2="86.7748" y2="28.4815" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2A3993">
+<animate attributeName="offset" values="0;0.2;0.5;0.2;0" dur="13s" repeatCount="indefinite" />
+
+</stop>
+<stop offset="1" stop-color="#727EC9">
+<animate attributeName="offset" values="0.5;0.7;0.8;1;0.7;0.5" dur="10.5s" repeatCount="indefinite" />
+</stop>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="59.668" y1="71.3622" x2="86.7748" y2="93.4268" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2A3993">
+<animate attributeName="offset" values="0;0.2;0.5;0.2;0" dur="13s" repeatCount="indefinite" />
+
+</stop>
+<stop offset="1" stop-color="#727EC9">
+<animate attributeName="offset" values="0.5;0.7;0.8;1;0.7;0.5" dur="10.5s" repeatCount="indefinite" />
+</stop>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="4" y1="38.8895" x2="31.1069" y2="60.9541" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2A3993">
+<animate attributeName="offset" values="0;0.2;0.5;0.2;0" dur="13s" repeatCount="indefinite" />
+
+</stop>
+<stop offset="1" stop-color="#727EC9">
+<animate attributeName="offset" values="0.5;0.7;0.8;1;0.7;0.5" dur="10.5s" repeatCount="indefinite" />
+</stop>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="29.9492" y1="29.3509" x2="70.7195" y2="49.9534" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2A3993">
+<animate attributeName="offset" values="0;0.2;0.5;0.2;0" dur="13s" repeatCount="indefinite" />
+
+</stop>
+<stop offset="1" stop-color="#727EC9">
+<animate attributeName="offset" values="0.5;0.7;0.8;1;0.7;0.5" dur="10.5s" repeatCount="indefinite" />
+</stop>
+</linearGradient>
+</defs>
+</svg>
